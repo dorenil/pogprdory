@@ -48,7 +48,7 @@ def build_chain(blocks, voted_ids):
     return chain
 
 def print_chain(chain):
-    print("\n📦 Побудований ланцюг:")
+    print("\n Побудований ланцюг:")
     for block in chain:
         print(f"ID: {block['id']}, View: {block['view']}, Value: {block['value']}")
 
@@ -106,16 +106,16 @@ def check_tree_type(root):
         print("Дерево не є повним.")
 
 def main():
-    print("🔧 Введення блоків:")
+    print("Введення блоків:")
     blocks = get_blocks()
 
-    print("\n🗳️ Введення голосів:")
+    print("Введення голосів:")
     votes = get_votes()
 
     voted_ids = extract_voted_ids(votes)
     chain = build_chain(blocks, voted_ids)
 
-    print("\n📦 Побудований ланцюг:")
+    print("\n Побудований ланцюг:")
     print_chain(chain)
 
     

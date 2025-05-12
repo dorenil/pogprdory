@@ -39,7 +39,7 @@ def build_chain(blocks, voted_ids):
     return chain
 
 def print_chain(chain):
-    print("\n📦 Побудований ланцюг:")
+    print("\n Побудований ланцюг:")
     for block in chain:
         print(f"ID: {block['id']}, View: {block['view']}")
 
@@ -47,7 +47,7 @@ def main():
     print("🔧 Введення блоків:")
     blocks = get_blocks()
 
-    print("\n🗳️ Введення голосів:")
+    print("\n Введення голосів:")
     votes = get_votes()
 
     voted_ids = extract_voted_ids(votes)
